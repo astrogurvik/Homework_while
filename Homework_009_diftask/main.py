@@ -82,12 +82,4 @@ descNumber = dig9 + dig8 + dig7 + dig6 + dig5 + dig4 + dig3 + dig2 + dig1 + dig0
 ascNumber = dig1 + dig2 + dig3 + dig4 + dig5 + dig6 + dig7 + dig8 + dig9
 print(int(descNumber))
 print(int(ascNumber))
-# Задача 11.173
-someStr = input()
-List = list(someStr)
 
-a_end = List.pop(-1)
-List.insert(0, a_end)
-
-print(list(someStr))
-print(List)
