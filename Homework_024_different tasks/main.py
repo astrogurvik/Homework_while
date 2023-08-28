@@ -49,3 +49,16 @@ for i in some_list:
         new_list_right.append(i)
 new_list_result = new_list_left + new_list_right
 print(f'Преобразованный массив: {new_list_result}')
+
+# Написать функцию maskify, которая преобразует все символы кроме последних четырёх в '#'
+def maskify(some_str):
+    if len(some_str) <= 4:
+        mask_str = some_str
+    else:
+        mask_str = '#' * (len(some_str) - 4) + some_str[-4:]
+    return mask_str
+
+
+input_str = input('Enter some string: ')
+result = maskify(input_str)
+print(result)
